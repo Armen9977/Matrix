@@ -1,7 +1,6 @@
 #include <iostream>
 #define M 4
 #define N 4
-using namespace std;
 
 void print(int mat[M][N])
 {
@@ -13,7 +12,7 @@ void print(int mat[M][N])
 		if (i % 2 == 0) 
 		{
 			for (int j = 0; j < N; ++j)
-				cout << mat[i][j] << " ";
+				std::cout << mat[i][j] << " ";
 
 			// If current row is odd, print from
 			// right to left
@@ -21,7 +20,7 @@ void print(int mat[M][N])
 		else
 		{
 			for (int j = N - 1; j >= 0; --j)
-				cout << mat[i][j] << " ";
+				std::cout << mat[i][j] << " ";
 		}
 	}
 }
